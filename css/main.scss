@@ -1,0 +1,281 @@
+$beige: #B58C4F;
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Quicksand";
+	background-color: lighten($beige,30);
+}
+
+.container {
+	width: 60%;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: white;
+	box-shadow: 17px 17px 17px 0 rgba(0,0,0,0.3);
+}
+
+.container__modal {
+	width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    position: fixed; 
+    z-index: 10; 
+    overflow: hidden; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.8);
+	display: none; 
+}
+
+.modal__content {
+	width: 50%; 
+	margin: 15% auto;
+	margin-top: 4%;
+    padding: 20px;
+    background-color: #fefefe;
+    border: 1px solid #888;
+
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 800px) {
+    	width: 90%;
+    }
+}
+
+.content__close {
+	margin-left: auto;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+
+    &:hover, &:focus {
+    	color: black;
+    	text-decoration: none;
+    	cursor: pointer;
+    }
+}
+
+.content__title {
+	margin-bottom: 50px;
+	font-weight: bold;
+	font-size: 30px;
+	color: #F4A460;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.content__ingredients-list {
+	font-weight: 550;
+	font-size: 20px; 
+}
+
+.ingredients-list__ingredient {
+	margin-bottom: 20px;
+	text-align: center;
+
+	span {
+		color: #F4A460;	
+	}
+}
+
+.container__navbar {
+	width: 100%;
+	height: 60px;
+	background-color: darken($beige,20);
+	font-weight: bold;
+	font-size: 22px;
+	color: white;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar__price-list {
+	width: 110px;
+	height: 100%;
+	margin-right: auto;
+	margin-left: 40px;
+	font-size: 18px;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	&:hover {
+		cursor: pointer;
+	}
+
+	img {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.navbar__title {
+	width: 60%;
+	margin-left: auto;
+}
+
+.container__body-app {
+	width: 100%;
+	height: 100%;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.body-app__burger {
+	width: 90%;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.burger {
+	width: 100%;
+	height: 70px;
+	background-color: #E15B26;
+}
+
+.burger__top {
+	border-radius: 50% 50% 0 0;
+}
+
+.burger__middle {
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+	font-size: 30px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.middle__ingredient:first-child {
+	margin-top: 10px;
+}
+
+.middle__ingredient {
+	width: 90%;
+	height: 40px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	border-radius: 40%;
+}
+
+.middle__salad {
+	background-color: #9ed870;
+}
+
+.middle__bacon {
+	background-color: #9f1313;
+}
+
+.middle__cheese {
+	background-color: #FFB612;
+}
+
+.middle__meat {
+	background-color: #DFA98F;
+}
+
+.burger__bottom {
+	border-radius: 0 0 50% 50%;
+}
+
+.body-app__menu {
+	width: 100%;
+	height: 400px;
+	margin-top: 40px;
+	background-color: lighten($beige,10);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.menu__price {
+	width: 100%;
+	padding-top: 40px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 19px;
+	color: white;
+}
+
+.menu__element {
+	width: 90%;
+	height: 60px;
+	margin-top: 20px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.element__statistics {
+	font-weight: bold;
+	font-size: 18px;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.element__amount {
+	margin-left: 10px;
+}
+
+.element__button {
+	width: 200px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.button {
+	width: 90px;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+	background-color: $beige;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&:hover {
+		cursor: pointer;
+		border: 2px solid darken($beige,20);
+	}
+}
+
+.menu__order-button {
+	width: 150px;
+	height: 80px;
+	margin-top: 40px;
+	margin-right: 60px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	border: 2px solid darken($beige,5);
+	border-radius: 20px;
+	background-color: darken($beige,5);
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+	transition: 0.3s;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&:hover {
+		transition: 0.3s;
+		border: 2px solid darken($beige,20);
+	}
+}

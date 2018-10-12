@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+		<title>Order Burger</title>
+		<meta name="description" content="Aplikacja zamawiająca hamburgera z restauracji do domu">
+  		<meta name="keywords" content="Order Burger, gastronomia, zamawianie jedzenia do domu">
+	</head>
+	<body>
+		<div class="container">
+			<div class="container__modal">
+  				<div class="modal__content">
+    				<span class="content__close">
+    					&times;
+    				</span>
+    				<div class="content__title">
+    					Extra Ingredients Price List
+    				</div>
+    				<div class="content__ingredients-list">
+    					<div class="ingredients-list__ingredient">
+    						Extra 1 Salad: 
+    						<span>
+    							0.20 PLN
+    						</span> 
+    					</div>
+    					<div class="ingredients-list__ingredient">
+    						Extra 1 Bacon: 
+    						<span>
+    							2.00 PLN
+    						</span> 
+    					</div>
+    					<div class="ingredients-list__ingredient">
+    						Extra 1 Cheese: 
+    						<span>
+    							1.00 PLN
+    						</span> 
+    					</div>
+    					<div class="ingredients-list__ingredient">
+    						Extra 1 Meat: 
+    						<span>
+    							1.50 PLN
+    						</span> 
+    					</div> 
+    				</div>
+ 	 			</div>
+			</div>
+			<div class="container__navbar">
+				<div class="navbar__price-list">
+					<img src="images/info.svg" alt="price list">
+					Price List
+				</div>
+				<div class="navbar__title">
+					Order Burger App
+				</div> 
+			</div>
+			<div class="container__body-app">
+				<div class="body-app__burger">
+					<div class="burger__top burger"></div>
+					<div class="burger__middle">
+						<div class="middle__salad middle__ingredient"></div>
+						<div class="middle__bacon middle__ingredient"></div>
+						<div class="middle__cheese middle__ingredient"></div>
+						<div class="middle__meat middle__ingredient"></div>
+					</div>
+					<div class="burger__bottom burger"></div>
+				</div>
+				<div class="body-app__menu">
+					<div class="menu__price">
+						Current Price: 
+						<span class="price__current-price">
+							10 PLN
+						<span> 
+					</div>
+					<div class="menu__element">
+						<div class="element__statistics">
+							<div class="element__name">
+								Salad: 
+							</div> 
+							<div class="element__amount salad-amount">
+								1
+							</div>	
+						</div>
+						<div class="element__button">
+							<div class="button button__more salad-more">
+								More
+							</div>
+							<div class="button button__less salad-less">
+								Less
+							</div>
+						</div>
+					</div>
+					<div class="menu__element">
+						<div class="element__statistics">
+							<div class="element__name">
+								Bacon: 
+							</div> 
+							<div class="element__amount bacon-amount">
+								1
+							</div>	
+						</div>	
+						<div class="element__button">
+							<div class="button button__more bacon-more">
+								More
+							</div>
+							<div class="button button__less bacon-less">
+								Less
+							</div>
+						</div>
+					</div>
+					<div class="menu__element">
+						<div class="element__statistics">
+							<div class="element__name">
+								Cheese: 
+							</div> 
+							<div class="element__amount cheese-amount">
+								1
+							</div>	
+						</div>	
+						<div class="element__button">
+							<div class="button button__more cheese-more">
+								More
+							</div>
+							<div class="button button__less cheese-less">
+								Less
+							</div>
+						</div>
+					</div>
+					<div class="menu__element">
+						<div class="element__statistics">
+							<div class="element__name">
+								Meat: 
+							</div> 
+							<div class="element__amount meat-amount">
+								1
+							</div>	
+						</div>
+						<div class="element__button">
+							<div class="button button__more meat-more">
+								More
+							</div>
+							<div class="button button__less meat-less">
+								Less
+							</div>
+						</div>
+					</div>
+					<div class="menu__order-button">
+						Order Now !
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/app.js"></script>
+		<script src="js/show-modal.js"></script>
+	</body>
+</html>
